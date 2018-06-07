@@ -1,0 +1,102 @@
+body{
+    background-color: #66BB6A;
+}
+.wrapper{
+    grid-template-columns: repeat(17,1fr) 45px 45px 45px;
+    grid-template-rows: repeat(20,1fr);
+    display: grid;
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.Title{
+    font-family: Roboto;
+    font-weight: 300;
+    font-size:300%;
+    letter-spacing: -0.5px;
+    grid-column: 2/10;
+    grid-row: 1;
+    margin-bottom: 0;
+}
+.Slogan{
+    font-family: Roboto;
+    font-weight: 100;
+    font-size:150%;
+    grid-column: 2/10;
+    grid-row: 2;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.middle{
+    grid-column:1/21;
+    grid-row: 3/20;
+    background-color: #81C784;
+}
+form{
+    grid-column: 7/14;
+    grid-row: 5/6;
+}
+#emailAddress{
+    border: 2px solid #FFD54F;
+    grid-column: 7/15;
+    grid-row: 7;
+    width: 500px;
+    height: 30px;
+    font-family: Roboto;
+}
+.button{
+    grid-column: 10/12;
+    grid-row: 6;
+}
+input{
+    width: 100px;
+    height: 30px;
+    font-family: Roboto;
+    font-weight: 400;
+    grid-column: 10/12;
+    grid-row: 6;
+
+}
+img[src = "Emoji.png"]{
+    grid-column: 9/13;
+    grid-row: 4;
+    margin:0;
+    padding:0;
+    width:85%;
+}
+img[src = "github.png"]{
+    grid-column: 18;
+    grid-row: 19;
+    width:45px;
+    height:45px;
+    margin:2px;
+}
+a{
+    grid-column: 19;
+    grid-row: 19;
+}
+/*
+img[src = "instagram.png"]{
+    grid-column: 19;
+    grid-row: 19;
+    width:45px;
+    height:45px;
+    margin:2px;
+}
+*/
+footer{
+    background-color: #FFCA28;
+    font-family: Roboto;
+    font-weight: 500;
+    letter-spacing: 2px;
+    grid-column:1/21;
+    grid-row:20;
+
+}
