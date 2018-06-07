@@ -22,3 +22,4 @@ for i in range(len(currentInfo)):
     f.write(date_info + "," + pollen_level + "\n")
 # Save file
 f.close()
+# EOF
