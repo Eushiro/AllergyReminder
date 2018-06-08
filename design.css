@@ -3,7 +3,7 @@ body{
 }
 .wrapper{
     grid-template-columns: repeat(17,1fr) 45px 45px 45px;
-    grid-template-rows: repeat(20,1fr);
+    grid-template-rows: repeat(19,1fr) 22px;
     display: grid;
     position:fixed;
     padding:0;
@@ -33,6 +33,42 @@ body{
     grid-row: 2;
     margin-top: 0;
     margin-bottom: 0;
+}
+.About{
+    font-family: Roboto;
+    font-weight: 100;
+    font-size:120%;
+    margin: 0;
+    padding: 0;
+}
+.Home{
+    font-family: Roboto;
+    font-weight: 100;
+    font-size:120%;
+    margin: 0;
+    padding: 0;
+}
+.Contact{
+    font-family: Roboto;
+    font-weight: 100;
+    font-size:120%;
+    margin: 0;
+    padding: 0;
+}
+a[href = "About.html"]{
+    grid-column: 17;
+    grid-row: 2;
+    text-decoration: none;
+}
+a[href = "Contact.html"]{
+    grid-column: 18;
+    grid-row: 2;
+    text-decoration: none;
+}
+a[href = "index.html"]{
+    grid-column: 16;
+    grid-row: 2;
+    text-decoration: none;
 }
 .middle{
     grid-column:1/21;
@@ -78,7 +114,7 @@ img[src = "Resources/github.png"]{
     height:45px;
     margin:2px;
 }
-a{
+a[href = "https://github.com/Eushiro/Pollinate"]{
     grid-column: 19;
     grid-row: 19;
 }

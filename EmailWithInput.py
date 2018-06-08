@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # Script to scrape the weather network for its pollen levels over the next three days and email it to a user.
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
@@ -19,8 +20,8 @@ server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
 server.login(fromaddrUsername, addrPassword)
 fromaddr = "programtesthiro@gmail.com"
-toaddr = "hiro.ayettey@gmail.com"
-user_name = "Team Pollinate"
+toaddr = input()
+user_name = "Pollen Reminder"
 msg = MIMEMultipart()
 msg['From'] = user_name
 msg['To'] = toaddr
@@ -41,7 +42,7 @@ for i in range(len(currentInfo)):
     body = body + date_info + ": " + pollen_level + "\n"
 
 body = body + last_updated_list[1].text + "\n\n"
-body = body + "Do not reply. This message was sent to you by an automated system."
+body = body + "Do not reply. This message was sent to you by an automated program."
 msg['Subject'] = "Pollen Levels are " + currentInfo[0].find(
     "span", {"class": "date-level"}).text + " | " + day_of_week + ", " + month + " %d" % my_date.day + ", %d" % my_date.year
 msg.attach(MIMEText(body, 'plain'))
