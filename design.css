@@ -64,14 +64,14 @@ input{
     grid-row: 6;
 
 }
-img[src = "Emoji.png"]{
+img[src = "Resources/Emoji.png"]{
     grid-column: 9/13;
     grid-row: 4;
     margin:0;
     padding:0;
     width:85%;
 }
-img[src = "github.png"]{
+img[src = "Resources/github.png"]{
     grid-column: 18;
     grid-row: 19;
     width:45px;
