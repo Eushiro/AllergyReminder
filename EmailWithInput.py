@@ -21,7 +21,7 @@ server.starttls()
 server.login(fromaddrUsername, addrPassword)
 fromaddr = "programtesthiro@gmail.com"
 toaddr = input()
-user_name = "Pollen Reminder"
+user_name = "Team Pollinate"
 msg = MIMEMultipart()
 msg['From'] = user_name
 msg['To'] = toaddr

@@ -1,5 +1,6 @@
 body{
     background-color: #66BB6A;
+    font-weight: lighter;
 }
 .wrapper{
     grid-template-columns: repeat(17,1fr) 45px 45px 45px;
@@ -17,17 +18,17 @@ body{
 }
 
 .Title{
-    font-family: Roboto;
-    font-weight: 300;
-    font-size:300%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 300%;
     letter-spacing: -0.5px;
     grid-column: 2/10;
     grid-row: 1;
     margin-bottom: 0;
 }
 .Slogan{
-    font-family: Roboto;
-    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
     font-size:150%;
     grid-column: 2/10;
     grid-row: 2;
@@ -35,21 +36,21 @@ body{
     margin-bottom: 0;
 }
 .About{
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size:120%;
     margin: 0;
     padding: 0;
 }
 .Home{
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size:120%;
     margin: 0;
     padding: 0;
 }
 .Contact{
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size:120%;
     margin: 0;
@@ -85,7 +86,7 @@ form{
     grid-row: 7;
     width: 500px;
     height: 30px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 }
 .button{
     grid-column: 10/12;
@@ -94,7 +95,7 @@ form{
 input{
     width: 100px;
     height: 30px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     grid-column: 10/12;
     grid-row: 6;
@@ -129,8 +130,8 @@ img[src = "instagram.png"]{
 */
 footer{
     background-color: #FFCA28;
-    font-family: Roboto;
-    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
     letter-spacing: 2px;
     grid-column:1/21;
     grid-row:20;
