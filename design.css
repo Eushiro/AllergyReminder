@@ -57,16 +57,19 @@ body{
     padding: 0;
 }
 a[href = "About.html"]{
+    visibility: hidden;
     grid-column: 17;
     grid-row: 2;
     text-decoration: none;
 }
 a[href = "Contact.html"]{
+    visibility: hidden;
     grid-column: 18;
     grid-row: 2;
     text-decoration: none;
 }
 a[href = "index.html"]{
+    visibility: hidden;
     grid-column: 16;
     grid-row: 2;
     text-decoration: none;
@@ -76,6 +79,7 @@ a[href = "index.html"]{
     grid-row: 3/20;
     background-color: #81C784;
 }
+
 form{
     grid-column: 7/14;
     grid-row: 5/6;
