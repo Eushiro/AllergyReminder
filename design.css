@@ -1,9 +1,10 @@
 body{
     background-color: #66BB6A;
+    font-weight: lighter;
 }
 .wrapper{
     grid-template-columns: repeat(17,1fr) 45px 45px 45px;
-    grid-template-rows: repeat(20,1fr);
+    grid-template-rows: repeat(19,1fr) 22px;
     display: grid;
     position:fixed;
     padding:0;
@@ -17,28 +18,68 @@ body{
 }
 
 .Title{
-    font-family: Roboto;
-    font-weight: 300;
-    font-size:300%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 300%;
     letter-spacing: -0.5px;
     grid-column: 2/10;
     grid-row: 1;
     margin-bottom: 0;
 }
 .Slogan{
-    font-family: Roboto;
-    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
     font-size:150%;
     grid-column: 2/10;
     grid-row: 2;
     margin-top: 0;
     margin-bottom: 0;
 }
+.About{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size:120%;
+    margin: 0;
+    padding: 0;
+}
+.Home{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size:120%;
+    margin: 0;
+    padding: 0;
+}
+.Contact{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size:120%;
+    margin: 0;
+    padding: 0;
+}
+a[href = "About.html"]{
+    visibility: hidden;
+    grid-column: 17;
+    grid-row: 2;
+    text-decoration: none;
+}
+a[href = "Contact.html"]{
+    visibility: hidden;
+    grid-column: 18;
+    grid-row: 2;
+    text-decoration: none;
+}
+a[href = "index.html"]{
+    visibility: hidden;
+    grid-column: 16;
+    grid-row: 2;
+    text-decoration: none;
+}
 .middle{
     grid-column:1/21;
     grid-row: 3/20;
     background-color: #81C784;
 }
+
 form{
     grid-column: 7/14;
     grid-row: 5/6;
@@ -49,7 +90,7 @@ form{
     grid-row: 7;
     width: 500px;
     height: 30px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 }
 .button{
     grid-column: 10/12;
@@ -58,7 +99,7 @@ form{
 input{
     width: 100px;
     height: 30px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     grid-column: 10/12;
     grid-row: 6;
@@ -78,7 +119,7 @@ img[src = "Resources/github.png"]{
     height:45px;
     margin:2px;
 }
-a{
+a[href = "https://github.com/Eushiro/Pollinate"]{
     grid-column: 19;
     grid-row: 19;
 }
@@ -93,8 +134,8 @@ img[src = "instagram.png"]{
 */
 footer{
     background-color: #FFCA28;
-    font-family: Roboto;
-    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
     letter-spacing: 2px;
     grid-column:1/21;
     grid-row:20;
